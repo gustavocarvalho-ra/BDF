@@ -8,6 +8,11 @@ export const Head = styled.div `
   justify-content: space-evenly;
   background: blue;
 
+  .title {
+    font-size: 1.8em;
+    text-decoration: none;
+  }
+
   .main {
     display: flex;
     align-items: center;
@@ -18,6 +23,7 @@ export const Head = styled.div `
     
       a {
         color: red;
+        text-decoration: none;
       }
     }
 

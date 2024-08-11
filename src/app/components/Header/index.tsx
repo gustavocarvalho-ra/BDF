@@ -5,7 +5,7 @@ import { Head } from "./styles";
 export default function Header() {
   return (
     <Head>
-      <Link href={"/"} style={{color: 'red'}}>Test Header</Link>
+      <Link className="title" href={"/"} style={{color: 'red'}}>Test Header</Link>
       <div className="main">
 
         <div className="container">
