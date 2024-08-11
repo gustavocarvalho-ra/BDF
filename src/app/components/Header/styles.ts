@@ -8,18 +8,25 @@ export const Head = styled.div `
   justify-content: space-evenly;
   background: blue;
 
-  .container {
+  .main {
+    display: flex;
+    align-items: center;
+
+    .container {
     display: flex;
     gap: 1.5em;
     
-    a {
-      color: red;
+      a {
+        color: red;
+      }
     }
-  }
-  .inp {
-    width: 40em;
-    height: 2em;
-    border-radius: 6px;
-    border: none;
+
+    .inp {
+      width: 40em;
+      height: 2.2em;
+      border-radius: 6px;
+      border: none;
+      margin-left: 2.8em;
+    }
   }
 `
