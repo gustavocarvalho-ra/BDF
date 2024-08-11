@@ -16,4 +16,10 @@ export const Head = styled.div `
       color: red;
     }
   }
+  .inp {
+    width: 40em;
+    height: 2em;
+    border-radius: 6px;
+    border: none;
+  }
 `

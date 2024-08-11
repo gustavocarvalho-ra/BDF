@@ -13,6 +13,7 @@ export default function Header() {
         <Link href={"/"}>home</Link>
         <Link href={"/"}>home</Link>
       </div>
+      <input className="inp" type="text" />
     </Head>
   )
 }
