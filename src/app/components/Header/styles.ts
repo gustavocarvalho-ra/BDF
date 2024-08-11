@@ -7,4 +7,8 @@ export const Head = styled.div `
   align-items: center;
   justify-content: space-around;
   background: blue;
+
+  a {
+    color: red;
+  }
 `
