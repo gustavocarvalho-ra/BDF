@@ -6,11 +6,13 @@ export default function Header() {
   return (
     <Head>
       <h1 style={{color: 'red'}}>Test Header</h1>
-      <Link href={"/"}>home</Link>
-      <Link href={"/"}>categorias</Link>
-      <Link href={"/"}>sobre</Link>
-      <Link href={"/"}>home</Link>
-      <Link href={"/"}>home</Link>
+      <div className="container">
+        <Link href={"/"}>home</Link>
+        <Link href={"/"}>categorias</Link>
+        <Link href={"/"}>sobre</Link>
+        <Link href={"/"}>home</Link>
+        <Link href={"/"}>home</Link>
+      </div>
     </Head>
   )
 }

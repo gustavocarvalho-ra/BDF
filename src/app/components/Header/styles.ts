@@ -5,10 +5,15 @@ export const Head = styled.div `
   height: 6vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background: blue;
 
-  a {
-    color: red;
+  .container {
+    display: flex;
+    gap: 1.5em;
+    
+    a {
+      color: red;
+    }
   }
 `
