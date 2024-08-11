@@ -12,8 +12,8 @@ export default function Header() {
           <Link href={"/"}>home</Link>
           <Link href={"/"}>categorias</Link>
           <Link href={"/"}>sobre</Link>
-          <Link href={"/"}>home</Link>
-          <Link href={"/"}>home</Link>
+          <Link href={"/"}>filmes</Link>
+          <Link href={"/"}>seríes</Link>
         </div>
 
         <input className="inp" type="text" />
