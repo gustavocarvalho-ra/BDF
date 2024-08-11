@@ -5,9 +5,9 @@ import { Head } from "./styles";
 export default function Header() {
   return (
     <Head>
-      <h1 style={{color: 'red'}}>Test Header</h1>
+      <Link href={"/"} style={{color: 'red'}}>Test Header</Link>
       <div className="main">
-        
+
         <div className="container">
           <Link href={"/"}>home</Link>
           <Link href={"/"}>categorias</Link>
