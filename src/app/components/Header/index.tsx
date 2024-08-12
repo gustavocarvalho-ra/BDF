@@ -13,7 +13,7 @@ export default function Header() {
           <Link href={"/"}>categorias</Link>
           <Link href={"/"}>sobre</Link>
           <Link href={"/"}>filmes</Link>
-          <Link href={"/"}>seríes</Link>
+          <Link href={"/"}>séríes</Link>
         </div>
 
         <input className="inp" type="text" />
