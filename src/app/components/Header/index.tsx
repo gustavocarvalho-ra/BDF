@@ -16,6 +16,12 @@ export default function Header() {
           <Link href={"/"}>séríes</Link>
         </div>
 
+        <div className="login">
+          <button>
+            
+          </button>
+        </div>
+
         <input className="inp" type="text" />
       </div>
     </Head>
