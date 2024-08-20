@@ -14,7 +14,7 @@ export default function Home() {
         <Header />
         <main>
           {/* <Cadastro /> */}
-          <Login />
+          {/* <Login /> */}
         </main>
       </Main>
     </>

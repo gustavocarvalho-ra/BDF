@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const Log = styled.div `
-  width: 40vw;
-  height: 30vh;
+  position: absolute;
+  left: 0;
+  top: 57px;
+  width: 100vw;
+  height: 50vh;
   background: red;
 
   .main {

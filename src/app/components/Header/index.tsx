@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Head } from "./styles";
 import { FaUserCircle } from "react-icons/fa";
 
+import Login from "../Login";
+
 export default function Header() {
 
   const [isLog, setLog] = useState(false)
@@ -31,6 +33,7 @@ export default function Header() {
 
         <div className="login" style={{marginLeft: "100px", fontSize: "50px"}}>
           <button onClick={LoginPop} style={{background: "transparent", color: "red", border: "none", cursor: "pointer"}}>
+            <div>{isLog ? <Login /> : " "}</div>
             <FaUserCircle style={{fontSize: "30px", background: "transparent"}}/>
           </button>
         </div>
