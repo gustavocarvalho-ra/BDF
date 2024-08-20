@@ -36,5 +36,11 @@ export const Head = styled.div `
       padding-left: 1em;
       font-size: .9em;
     }
+
+    .login {
+      button {
+        transition: all 6s;
+      }
+    }
   }
 `

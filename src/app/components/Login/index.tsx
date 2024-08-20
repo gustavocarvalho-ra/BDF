@@ -5,7 +5,7 @@ import { Log } from "./styles";
 
 export default function Login() {
   return(
-    <Log className="main">
+    <Log>
       <div className="main">
         <form action="">
           <h1>Login</h1>

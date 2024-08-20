@@ -7,9 +7,12 @@ export const Log = styled.div `
   width: 100vw;
   height: 50vh;
   background: red;
+  display: flex;
+  align-content: center;
+  justify-content : center;
 
   .main {
-    width: 420px;
+    width: 20vw;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(15px);
