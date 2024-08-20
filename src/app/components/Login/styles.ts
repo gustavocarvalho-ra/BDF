@@ -6,10 +6,20 @@ export const Log = styled.div `
   top: 57px;
   width: 100vw;
   height: 50vh;
-  background: red;
+  /* background: green; */
   display: flex;
   align-content: center;
   justify-content : center;
+
+  .image {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-image: url("/cinema.PNG");
+    background-size: cover;
+    filter: blur(5px) brightness(0.3);
+
+  }
 
   .main {
     width: 20vw;

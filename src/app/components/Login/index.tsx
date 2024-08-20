@@ -2,10 +2,12 @@
 
 import { FaUser, FaLock } from "react-icons/fa";
 import { Log } from "./styles";
+import Image from "next/image";
 
 export default function Login() {
   return(
     <Log>
+      <div className="image"/>
       <div className="main">
         <form action="">
           <h1>Login</h1>
