@@ -1,10 +1,10 @@
 "use client"
 
-import Image from "next/image";
-import styles from "./page.module.css";
-import Header from "./components/Header";
-import Cadastro from "./components/Cadastro";
 import { Main } from './styles';
+
+import Cadastro from "./components/Cadastro";
+import Header from "./components/Header";
+import Login from "./components/Login";
 
 export default function Home() {
   return (
@@ -13,7 +13,8 @@ export default function Home() {
 
         <Header />
         <main>
-          <Cadastro />
+          {/* <Cadastro /> */}
+          <Login />
         </main>
       </Main>
     </>

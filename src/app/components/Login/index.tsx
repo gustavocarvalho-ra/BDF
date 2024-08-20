@@ -1,10 +1,11 @@
 "use client"
 
 import { FaUser, FaLock } from "react-icons/fa";
+import { Log } from "./styles";
 
 export default function Login() {
   return(
-    <div className="main">
+    <Log className="main">
       <form action="">
         <h1>Login</h1>
         <div className="input-box">
@@ -14,7 +15,6 @@ export default function Login() {
         <div className="input-box">
           <input type="password" placeholder='Senha' required />
           <FaLock className='icon' />
-
         </div>
 
         <div className="esqueceu-senha">
@@ -28,6 +28,6 @@ export default function Login() {
           <p>Não possui conta? <a href="#">Registrar</a></p>
         </div>
       </form>
-    </div>
+    </Log>
   )
 }
