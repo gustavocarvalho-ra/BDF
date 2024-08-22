@@ -12,7 +12,7 @@ export default function Modal({isOpen, onClose}: ModalProps) {
   return (
 
     <Log>
-      <div className="bg">
+      <div className="bg" onClick={onClose}>
 
         <button className="close" style={{zIndex: "20", position: "absolute"}} onClick={onClose}>
           X

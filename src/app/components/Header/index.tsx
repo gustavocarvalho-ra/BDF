@@ -41,7 +41,7 @@ export default function Header() {
             <FaUserCircle style={{fontSize: "30px", background: "transparent"}}/>
           </button>
         </div>
-        <Modal isOpen={modalIsOpen} />
+        <Modal isOpen={modalIsOpen} onClose={handleOpenModal}/>
 
       </div>
     </Head>
