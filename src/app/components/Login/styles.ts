@@ -11,6 +11,13 @@ export const Log = styled.div `
   align-content: center;
   justify-content : center;
 
+  .bg {
+    width: 100%;
+    height: 90vh;
+    opacity: 100;
+    background: green;
+  }
+
   .image {
     position: absolute;
     width: 100vw;
