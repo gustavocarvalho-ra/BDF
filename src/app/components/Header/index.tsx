@@ -6,14 +6,20 @@ import { Head } from "./styles";
 import { FaUserCircle } from "react-icons/fa";
 
 import Login from "../Login";
+import Modal from "../Modal";
 
 export default function Header() {
 
-  const [isLog, setLog] = useState(false)
+  const [modalIsOpen, setModalIsOpen] = useState(false)
 
-  const LoginPop = () => {
-    setLog((prevState) => !prevState)
+  function handleOpenModal() {
+    setModalIsOpen(!modalIsOpen)
   }
+
+  // const LoginPop = () => {
+  //   setLog((prevState) => !prevState)
+  // }
+
 
   return (
     <Head>
@@ -31,10 +37,11 @@ export default function Header() {
         <input className="inp" type="text" />
 
         <div className="login" style={{marginLeft: "100px", fontSize: "50px"}}>
-          <button onClick={() => console.log("clicou")} style={{background: "transparent", color: "red", border: "none", cursor: "pointer"}}>
+          <button onClick={handleOpenModal} style={{background: "transparent", color: "red", border: "none", cursor: "pointer"}}>
             <FaUserCircle style={{fontSize: "30px", background: "transparent"}}/>
           </button>
         </div>
+        <Modal isOpen={modalIsOpen} />
 
       </div>
     </Head>

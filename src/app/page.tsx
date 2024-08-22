@@ -16,7 +16,7 @@ export default function Home() {
         <main>
           {/* <Cadastro /> */}
           {/* <Login /> */}
-          <Modal isOpen={true}/>
+          {/* <Modal isOpen={modalIsOpen} /> */}
         </main>
       </Main>
     </>
