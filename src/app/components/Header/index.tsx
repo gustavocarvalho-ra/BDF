@@ -31,8 +31,7 @@ export default function Header() {
         <input className="inp" type="text" />
 
         <div className="login" style={{marginLeft: "100px", fontSize: "50px"}}>
-          <button onClick={LoginPop} style={{background: "transparent", color: "red", border: "none", cursor: "pointer"}}>
-            <div>{isLog ? <Login /> : " "}</div>
+          <button onClick={() => console.log("clicou")} style={{background: "transparent", color: "red", border: "none", cursor: "pointer"}}>
             <FaUserCircle style={{fontSize: "30px", background: "transparent"}}/>
           </button>
         </div>
