@@ -16,11 +16,6 @@ export default function Header() {
     setModalIsOpen(!modalIsOpen)
   }
 
-  // const LoginPop = () => {
-  //   setLog((prevState) => !prevState)
-  // }
-
-
   return (
     <Head>
       <Link className="title" href={"/"} style={{color: 'red'}}>Test Header</Link>
@@ -42,6 +37,7 @@ export default function Header() {
           </button>
         </div>
         <Modal isOpen={modalIsOpen} onClose={handleOpenModal}/>
+
 
       </div>
     </Head>

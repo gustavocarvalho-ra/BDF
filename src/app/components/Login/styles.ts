@@ -16,6 +16,10 @@ export const Log = styled.div `
     height: 90vh;
     opacity: 100;
     background: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .image {
