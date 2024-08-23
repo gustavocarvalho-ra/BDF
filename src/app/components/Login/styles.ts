@@ -52,18 +52,18 @@ export const Log = styled.div `
       width: 100%;
       height: 50px;
       margin: 30px 0;
-      color: black;
+      color: #fff;
       
       input {
         width: 100%;
         height: 100%;
         background: transparent;
-        border: 2px solid rgba(255, 255, 255, .2);
+        border-bottom: 2px solid rgba(255, 255, 255, .2);
         outline: none;
-        border-radius: 40px;
         font-size: 16px;
         color: #fff;
         padding: 20px 40px 20px 20px;
+        color: #fff;
 
         &::placeholder {
           color: #fff;
