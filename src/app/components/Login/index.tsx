@@ -7,30 +7,35 @@ import Image from "next/image";
 export default function Login() {
   return(
     <Log>
-      <div className="image"/>
-      <div className="main">
-        <form action="">
-          <h1>Login</h1>
-          <div className="input-box">
-            <input type="text" placeholder='Nome de Usuário' required />
-            <FaUser className='icon' />
-          </div>
-          <div className="input-box">
-            <input type="password" placeholder='Senha' required />
-            <FaLock className='icon' />
-          </div>
+      <div className="wrapper">
 
-          <div className="esqueceu-senha">
-            <label><input type="checkbox" />Salvar a senha</label>
-            <a href="#">Esqueceu a senha?</a>
-          </div>
+        <div className="form-box login">
+          
+          <form action="">
+            <h1>Login</h1>
+            <div className="input-box">
+              <input type="text" placeholder='Nome de Usuário' required />
+              <FaUser className='icon' />
+            </div>
 
-          <button type='submit'>Login</button>
+            <div className="input-box">
+              <input type="password" placeholder='Senha' required />
+              <FaLock className='icon' />
+            </div>
 
-          <div className="register-link">
-            <p>Não possui conta? <a href="#">Registrar</a></p>
-          </div>
-        </form>
+            <div className="esqueceu-senha">
+              <label><input type="checkbox" />Salvar a senha</label>
+              <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button type='submit'>Login</button>
+
+            <div className="register-link">
+              <p>Não possui conta? <a href="#">Registrar</a></p>
+            </div>
+          </form>
+
+        </div>
       </div>
     </Log>
   )

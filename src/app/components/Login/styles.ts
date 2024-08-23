@@ -32,7 +32,7 @@ export const Log = styled.div `
 
   }
 
-  .main {
+  .form-box {
     width: 20vw;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);

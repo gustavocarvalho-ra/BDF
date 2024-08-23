@@ -14,6 +14,7 @@ export default function Modal({isOpen, onClose}: ModalProps) {
   return (
 
     <Log>
+      <div className="image"/>
       <Login />
       <Cadastro />
       {/* <div className="bg" onClick={onClose}>
