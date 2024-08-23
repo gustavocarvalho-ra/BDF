@@ -7,31 +7,47 @@ import Image from "next/image";
 import { Cad } from "../Cadastro/styles";
 
 export default function Login() {
-  const wrapper = document.querySelector('.wrapper') as HTMLElement;
-  const loginLink = document.querySelector('.login-link') as HTMLElement;
-  const registerLink = document.querySelector('.register-link') as HTMLElement;
-  const btnPopup = document.querySelector('.btnLogin-popup') as HTMLElement;
-  const iconClose = document.querySelector('.icon-close') as HTMLElement;
+  const wrapper = document.querySelector('.wrapper') as HTMLElement | null;
+  const loginLink = document.querySelector('.login-link') as HTMLElement | null;
+  const registerLink = document.querySelector('.register-link') as HTMLElement | null;
+  const btnPopup = document.querySelector('.btnLogin-popup') as HTMLElement | null;
+  const iconClose = document.querySelector('.icon-close') as HTMLElement | null;
   
-  // registerLink.addEventListener('click', () => {
-  //   wrapper.classList.add('active');
-  // });
+  if (registerLink) {
+    registerLink.addEventListener('click', () => {
+      if (wrapper) {
+        wrapper.classList.add('active');
+      }
+    });
+  }
   
-  // loginLink.addEventListener('click', () => {
-  //   wrapper.classList.remove('active');
-  // });
+  if (loginLink) {
+    loginLink.addEventListener('click', () => {
+      if (wrapper) {
+        wrapper.classList.remove('active');
+      }
+    });
+  }
   
-  // btnPopup.addEventListener('click', () => {
-  //   wrapper.classList.add('active-popup');
-  // });
+  if (btnPopup) {
+    btnPopup.addEventListener('click', () => {
+      if (wrapper) {
+        wrapper.classList.add('active-popup');
+      }
+    });
+  }
   
-  // iconClose.addEventListener('click', () => {
-  //   wrapper.classList.remove('active-popup');
-  // });
-
-  // if (wrapper) {
-  //   wrapper.classList.add('active');
-  // }
+  if (iconClose) {
+    iconClose.addEventListener('click', () => {
+      if (wrapper) {
+        wrapper.classList.remove('active-popup');
+      }
+    });
+  }
+  
+  if (wrapper) {
+    wrapper.classList.add('active');
+  }
 
   return(
     <Cad>

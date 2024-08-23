@@ -1,4 +1,5 @@
 import Cadastro from "../Cadastro";
+import { Cad } from "../Cadastro/styles";
 import Login from "../Login";
 import { Log } from "../Login/styles";
 import { FaUser, FaLock } from "react-icons/fa";
