@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { Log } from "./styles";
 import { Cad } from "../Cadastro/styles";
 
+
 export default function Login() {
   const wrapper = document.querySelector('.wrapper') as HTMLElement | null;
   const loginLink = document.querySelector('.login-link') as HTMLElement | null;
@@ -50,7 +51,7 @@ export default function Login() {
 
   return(
     <Cad>
-      {/* <div className="wrapper"> */}
+      <div className="wrapper">
 
         <div className="form-box login">
           <h2>Login</h2>
@@ -77,7 +78,7 @@ export default function Login() {
             </div>
           </form>     
         </div>
-      {/* </div> */}
+      </div>
     </Cad>
   )
 }

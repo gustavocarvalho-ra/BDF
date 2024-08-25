@@ -2,8 +2,12 @@ import { Cad } from "./styles"
 
 import { MdEmail } from "react-icons/md";
 import { FaUser, FaLock } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Cadastro() {
+
+  const [wrap, serWrap] = useState(false)
+
   const wrapper = document.querySelector('.wrapper') as HTMLElement | null;
   const loginLink = document.querySelector('.login-link') as HTMLElement | null;
   const registerLink = document.querySelector('.register-link') as HTMLElement | null;
