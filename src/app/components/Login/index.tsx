@@ -13,41 +13,41 @@ export default function Login() {
   const btnPopup = document.querySelector('.btnLogin-popup') as HTMLElement | null;
   const iconClose = document.querySelector('.icon-close') as HTMLElement | null;
   
-  if (registerLink) {
-    registerLink.addEventListener('click', () => {
-      if (wrapper) {
-        wrapper.classList.add('active');
-      }
-    });
-  }
+  // if (registerLink) {
+  //   registerLink.addEventListener('click', () => {
+  //     if (wrapper) {
+  //       wrapper.classList.add('active');
+  //     }
+  //   });
+  // }
   
-  if (loginLink) {
-    loginLink.addEventListener('click', () => {
-      if (wrapper) {
-        wrapper.classList.remove('active');
-      }
-    });
-  }
+  // if (loginLink) {
+  //   loginLink.addEventListener('click', () => {
+  //     if (wrapper) {
+  //       wrapper.classList.remove('active');
+  //     }
+  //   });
+  // }
   
-  if (btnPopup) {
-    btnPopup.addEventListener('click', () => {
-      if (wrapper) {
-        wrapper.classList.add('active-popup');
-      }
-    });
-  }
+  // if (btnPopup) {
+  //   btnPopup.addEventListener('click', () => {
+  //     if (wrapper) {
+  //       wrapper.classList.add('active-popup');
+  //     }
+  //   });
+  // }
   
-  if (iconClose) {
-    iconClose.addEventListener('click', () => {
-      if (wrapper) {
-        wrapper.classList.remove('active-popup');
-      }
-    });
-  }
+  // if (iconClose) {
+  //   iconClose.addEventListener('click', () => {
+  //     if (wrapper) {
+  //       wrapper.classList.remove('active-popup');
+  //     }
+  //   });
+  // }
   
-  if (wrapper) {
-    wrapper.classList.add('active');
-  }
+  // if (wrapper) {
+  //   wrapper.classList.add('active');
+  // }
 
   return(
     <Cad>

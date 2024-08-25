@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Cadastro() {
 
-  const [wrap, serWrap] = useState(false)
+  const [wrap, setWrap] = useState(false)
 
   const wrapper = document.querySelector('.wrapper') as HTMLElement | null;
   const loginLink = document.querySelector('.login-link') as HTMLElement | null;
@@ -14,41 +14,46 @@ export default function Cadastro() {
   const btnPopup = document.querySelector('.btnLogin-popup') as HTMLElement | null;
   const iconClose = document.querySelector('.icon-close') as HTMLElement | null;
   
-  if (registerLink) {
-    registerLink.addEventListener('click', () => {
-      if (wrapper) {
-        wrapper.classList.add('active');
-      }
-    });
+
+  const wrapp = () => {
+
+    if (registerLink) {
+      registerLink.addEventListener('click', () => {
+        if (wrapper) {
+          wrapper.classList.add('active');
+        }
+      });
+    }
+    
+    if (loginLink) {
+      loginLink.addEventListener('click', () => {
+        if (wrapper) {
+          wrapper.classList.remove('active');
+        }
+      });
+    }
+    
+    if (btnPopup) {
+      btnPopup.addEventListener('click', () => {
+        if (wrapper) {
+          wrapper.classList.add('active-popup');
+        }
+      });
+    }
+    
+    if (iconClose) {
+      iconClose.addEventListener('click', () => {
+        if (wrapper) {
+          wrapper.classList.remove('active-popup');
+        }
+      });
+    }
+    
+    if (wrapper) {
+      wrapper.classList.add('active');
+    }
   }
-  
-  if (loginLink) {
-    loginLink.addEventListener('click', () => {
-      if (wrapper) {
-        wrapper.classList.remove('active');
-      }
-    });
-  }
-  
-  if (btnPopup) {
-    btnPopup.addEventListener('click', () => {
-      if (wrapper) {
-        wrapper.classList.add('active-popup');
-      }
-    });
-  }
-  
-  if (iconClose) {
-    iconClose.addEventListener('click', () => {
-      if (wrapper) {
-        wrapper.classList.remove('active-popup');
-      }
-    });
-  }
-  
-  if (wrapper) {
-    wrapper.classList.add('active');
-  }
+
   
 
   return ( 
@@ -85,7 +90,7 @@ export default function Cadastro() {
 
           <div className="login-register">
             <p>Já possui uma conta?
-              <a href="#" className="login-link">Login</a>
+              <button className="login-link" onClick={wrapp}>Login</button>
             </p>
           </div>
 
