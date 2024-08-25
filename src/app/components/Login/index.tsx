@@ -3,7 +3,6 @@
 import { FaUser, FaLock } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Log } from "./styles";
-import Image from "next/image";
 import { Cad } from "../Cadastro/styles";
 
 export default function Login() {
@@ -51,7 +50,7 @@ export default function Login() {
 
   return(
     <Cad>
-      <div className="wrapper">
+      {/* <div className="wrapper"> */}
 
         <div className="form-box login">
           <h2>Login</h2>
@@ -78,7 +77,7 @@ export default function Login() {
             </div>
           </form>     
         </div>
-      </div>
+      {/* </div> */}
     </Cad>
   )
 }
