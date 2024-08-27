@@ -1,84 +1,83 @@
-"use client"
-
-import { FaUser, FaLock } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { Log } from "./styles";
-import { Cad } from "../Cadastro/styles";
-
+import { useEffect } from 'react';
+import styles from '../styles/Login.module.scss';
 
 export default function Login() {
-  const wrapper = document.querySelector('.wrapper') as HTMLElement | null;
-  const loginLink = document.querySelector('.login-link') as HTMLElement | null;
-  const registerLink = document.querySelector('.register-link') as HTMLElement | null;
-  const btnPopup = document.querySelector('.btnLogin-popup') as HTMLElement | null;
-  const iconClose = document.querySelector('.icon-close') as HTMLElement | null;
-  
-  // if (registerLink) {
-  //   registerLink.addEventListener('click', () => {
-  //     if (wrapper) {
-  //       wrapper.classList.add('active');
-  //     }
-  //   });
-  // }
-  
-  // if (loginLink) {
-  //   loginLink.addEventListener('click', () => {
-  //     if (wrapper) {
-  //       wrapper.classList.remove('active');
-  //     }
-  //   });
-  // }
-  
-  // if (btnPopup) {
-  //   btnPopup.addEventListener('click', () => {
-  //     if (wrapper) {
-  //       wrapper.classList.add('active-popup');
-  //     }
-  //   });
-  // }
-  
-  // if (iconClose) {
-  //   iconClose.addEventListener('click', () => {
-  //     if (wrapper) {
-  //       wrapper.classList.remove('active-popup');
-  //     }
-  //   });
-  // }
-  
-  // if (wrapper) {
-  //   wrapper.classList.add('active');
-  // }
+  useEffect(() => {
+    const wrapper = document.querySelector(`.${styles.wrapper}`);
+    const loginLink = document.querySelector(`.${styles.loginLink}`);
+    const registerLink = document.querySelector(`.${styles.registerLink}`);
+    const iconClose = document.querySelector(`.${styles.iconClose}`);
 
-  return(
-    <Cad>
-      <div className="wrapper">
+    registerLink?.addEventListener('click', () => {
+      wrapper?.classList.add(styles.active);
+    });
 
-        <div className="form-box login">
-          <h2>Login</h2>
-          <form action="#">
-            <div className="input-box">
-              <span className="icon"><MdEmail name="mail"></MdEmail></span>
-              <input type="e-mail" required/>
-              <label>Email</label>
-            </div>
-            <div className="input-box">
-              <span className="icon"><FaLock name="lock-closed"></FaLock></span>
-              <input type="password" required/>
-              <label>Senha</label>
-            </div>
-            <div className="remember-forgot">
-              <label><input type="checkbox"/>Lembrar senha</label>
-              <a href="#">Esqueceu a senha?</a>
-            </div>
-            <button type="submit" className="btn">Entrar</button>
-            <div className="login-register">
-              <p>Não possui conta?
-                <a href="#" className="register-link">Registrar</a>
-              </p>
-            </div>
-          </form>     
-        </div>
+    loginLink?.addEventListener('click', () => {
+      wrapper?.classList.remove(styles.active);
+    });
+
+    iconClose?.addEventListener('click', () => {
+      wrapper?.classList.remove(styles.activePopup);
+    });
+  }, []);
+
+  return (
+    <div className={styles.wrapper}>
+      <span className={styles.iconClose}>
+        <ion-icon name="close"></ion-icon>
+      </span>
+
+      <div className={`${styles.formBox} ${styles.login}`}>
+        <h2>Login</h2>
+        <form action="#">
+          <div className={styles.inputBox}>
+            <span className={styles.icon}><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div className={styles.inputBox}>
+            <span className={styles.icon}><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Senha</label>
+          </div>
+          <div className={styles.rememberForgot}>
+            <label><input type="checkbox" /> Lembrar senha</label>
+            <a href="#">Esqueceu a senha?</a>
+          </div>
+          <button type="submit" className={styles.btn}>Entrar</button>
+          <div className={styles.loginRegister}>
+            <p>Não possui conta? <a href="#" className={styles.registerLink}>Registrar</a></p>
+          </div>
+        </form>
       </div>
-    </Cad>
-  )
+
+      <div className={`${styles.formBox} ${styles.register}`}>
+        <h2>Registre-se</h2>
+        <form action="#">
+          <div className={styles.inputBox}>
+            <span className={styles.icon}><ion-icon name="person"></ion-icon></span>
+            <input type="text" required />
+            <label>Nome de usuário</label>
+          </div>
+          <div className={styles.inputBox}>
+            <span className={styles.icon}><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div className={styles.inputBox}>
+            <span className={styles.icon}><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Senha</label>
+          </div>
+          <div className={styles.rememberForgot}>
+            <label><input type="checkbox" required /> Eu concordo com os <a href="#">termos</a> & <a href="#">condições</a></label>
+          </div>
+          <button type="submit" className={styles.btn}>Registrar</button>
+          <div className={styles.loginRegister}>
+            <p>Já possui uma conta? <a href="#" className={styles.loginLink}>Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
 }
