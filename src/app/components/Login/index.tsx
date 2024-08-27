@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 import styles from '../styles/Login.module.scss';
 
+import { IoClose } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
+import { FaLock, FaUser } from "react-icons/fa";
+
 export default function Login() {
   useEffect(() => {
     const wrapper = document.querySelector(`.${styles.wrapper}`);
@@ -24,19 +28,19 @@ export default function Login() {
   return (
     <div className={styles.wrapper}>
       <span className={styles.iconClose}>
-        <ion-icon name="close"></ion-icon>
+        <IoClose name="close"></IoClose>
       </span>
 
       <div className={`${styles.formBox} ${styles.login}`}>
         <h2>Login</h2>
         <form action="#">
           <div className={styles.inputBox}>
-            <span className={styles.icon}><ion-icon name="mail"></ion-icon></span>
+            <span className={styles.icon}><MdEmail name="mail"></MdEmail></span>
             <input type="email" required />
             <label>Email</label>
           </div>
           <div className={styles.inputBox}>
-            <span className={styles.icon}><ion-icon name="lock-closed"></ion-icon></span>
+            <span className={styles.icon}><FaLock name="lock-closed"></FaLock></span>
             <input type="password" required />
             <label>Senha</label>
           </div>
@@ -55,17 +59,17 @@ export default function Login() {
         <h2>Registre-se</h2>
         <form action="#">
           <div className={styles.inputBox}>
-            <span className={styles.icon}><ion-icon name="person"></ion-icon></span>
+            <span className={styles.icon}><FaUser name="person"></FaUser></span>
             <input type="text" required />
             <label>Nome de usuário</label>
           </div>
           <div className={styles.inputBox}>
-            <span className={styles.icon}><ion-icon name="mail"></ion-icon></span>
+            <span className={styles.icon}><MdEmail name="mail"></MdEmail></span>
             <input type="email" required />
             <label>Email</label>
           </div>
           <div className={styles.inputBox}>
-            <span className={styles.icon}><ion-icon name="lock-closed"></ion-icon></span>
+            <span className={styles.icon}><FaLock name="lock-closed"></FaLock></span>
             <input type="password" required />
             <label>Senha</label>
           </div>
