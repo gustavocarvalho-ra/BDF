@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import styles from '../styles/Login.module.scss';
+import styles from '../styles/Form.module.scss';
 
 import { IoClose } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
