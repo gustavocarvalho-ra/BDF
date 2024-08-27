@@ -1,3 +1,8 @@
+
+// :root {
+//   --text: #5294a1;
+// }
+
 .wrapper {
   position: relative;
   width: 400px;
@@ -55,7 +60,7 @@
   right: 0;
   width: 45px;
   height: 45px;
-  background: var(--text);
+  background: #5294a1;
   font-size: 2em;
   color: #fff;
   display: flex;
@@ -66,17 +71,17 @@
   z-index: 1;
 }
 
-h2 {
-  font-size: 2em;
-  color: var(--text);
-  text-align: center;
-}
+// h2 {
+//   font-size: 2em;
+//   color: #5294a1;
+//   text-align: center;
+// }
 
 .inputBox {
   position: relative;
   width: 100%;
   height: 50px;
-  border-bottom: 2px solid var(--text);
+  border-bottom: 2px solid #5294a1;
   margin: 30px 0;
 
   label {
@@ -85,7 +90,7 @@ h2 {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: var(--text);
+    color: #5294a1;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -103,7 +108,7 @@ h2 {
     border: none;
     outline: none;
     font-size: 1em;
-    color: var(--text);
+    color: #5294a1;
     font-weight: 600;
     padding: 0 35px 0 5px;
   }
@@ -112,21 +117,21 @@ h2 {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: var(--text);
+    color: #5294a1;
     line-height: 57px;
   }
 }
 
 .rememberForgot {
   font-size: .9em;
-  color: var(--text);
+  color: #5294a1;
   font-weight: 500;
   margin: -15px 0 15px;
   display: flex;
   justify-content: space-between;
 
   label input {
-    accent-color: var(--text);
+    accent-color: #5294a1;
     margin-right: 3px;
   }
 
@@ -143,7 +148,7 @@ h2 {
 .btn {
   width: 100%;
   height: 45px;
-  background: var(--text);
+  background: #5294a1;
   border: none;
   outline: none;
   border-radius: 6px;
@@ -160,7 +165,7 @@ h2 {
 
 .loginRegister {
   font-size: .9em;
-  color: var(--text);
+  color: #5294a1;
   text-align: center;
   font-weight: 500;
   margin: 25px 0 10px;
