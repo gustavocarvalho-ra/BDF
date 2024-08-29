@@ -26,7 +26,8 @@ export default function Form() {
   }, []);
 
   return (
-    <div className={styles.wrapper}>
+    // <div className={styles.wrapper}>
+    <div>
       <span className={styles.iconClose}>
         <IoClose name="close"></IoClose>
       </span>
