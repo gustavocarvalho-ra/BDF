@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <Head>
-      <Link className="title" href={"/"} style={{color: 'red'}}>Test Header</Link>
+      <Link className="title" href={"/"} style={{color: 'red'}}>Home</Link>
       <div className="main">
 
         <div className="container">
