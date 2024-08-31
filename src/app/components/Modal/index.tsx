@@ -1,9 +1,6 @@
-import Cadastro from "../Cadastro";
 import { Cad } from "../Cadastro/styles";
 import Form from "../Form";
-import Login from "../Login";
 import { Log } from "../Login/styles";
-import { FaUser, FaLock } from "react-icons/fa";
 
 interface ModalProps {
   isOpen?: boolean;
@@ -63,10 +60,6 @@ export default function Modal({isOpen, onClose}: ModalProps) {
       <div className="image"/>
       
       <Form />
-      {/* <Login /> */}
-      {/* <Cadastro /> */}
-      {/* <div className="bg" onClick={onClose}>
-      </div> */}
     </Log>
   )
 }
