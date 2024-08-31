@@ -11,18 +11,28 @@ export default function Form() {
     const loginLink = document.querySelector(`.${styles.loginLink}`);
     const registerLink = document.querySelector(`.${styles.registerLink}`);
     const iconClose = document.querySelector(`.${styles.iconClose}`);
-
-    registerLink?.addEventListener('click', () => {
+  
+    const handleRegisterLinkClick = () => {
       wrapper?.classList.add(styles.active);
-    });
-
-    loginLink?.addEventListener('click', () => {
+    };
+  
+    const handleLoginLinkClick = () => {
       wrapper?.classList.remove(styles.active);
-    });
-
-    iconClose?.addEventListener('click', () => {
+    };
+  
+    const handleIconCloseClick = () => {
       wrapper?.classList.remove(styles.activePopup);
-    });
+    };
+  
+    registerLink?.addEventListener('click', handleRegisterLinkClick);
+    loginLink?.addEventListener('click', handleLoginLinkClick);
+    iconClose?.addEventListener('click', handleIconCloseClick);
+  
+    return () => {
+      registerLink?.removeEventListener('click', handleRegisterLinkClick);
+      loginLink?.removeEventListener('click', handleLoginLinkClick);
+      iconClose?.removeEventListener('click', handleIconCloseClick);
+    };
   }, []);
 
   return (
