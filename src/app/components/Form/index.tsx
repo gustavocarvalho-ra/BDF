@@ -27,10 +27,10 @@ export default function Form() {
 
   return (
     // <div className={styles.wrapper}>
-    <div>
-      <span className={styles.iconClose}>
+    <div className={styles.container}>
+      {/* <span className={styles.iconClose}>
         <IoClose name="close"></IoClose>
-      </span>
+      </span> */}
 
       <div className={`${styles.formBox} ${styles.login}`}>
         <h2>Login</h2>
