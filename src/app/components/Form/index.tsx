@@ -7,7 +7,7 @@ import { FaLock, FaUser } from "react-icons/fa";
 
 export default function Form() {
   useEffect(() => {
-    const wrapper = document.querySelector(`.${styles.wrapper}`);
+    const wrapper = document.querySelector(`.${styles.container}`);
     const loginLink = document.querySelector(`.${styles.loginLink}`);
     const registerLink = document.querySelector(`.${styles.registerLink}`);
     const iconClose = document.querySelector(`.${styles.iconClose}`);

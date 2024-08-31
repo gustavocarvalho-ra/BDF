@@ -48,14 +48,14 @@
 
     .active & {
       transition: none;
-      // transform: translateX(-400px);
+      transform: translateX(-400px);
     }
   }
 
   &.register {
     // position: absolute;
     transition: none;
-    // transform: translateX(400px);
+    transform: translateX(400px);
 
     .active & {
       transition: transform .18s ease;
