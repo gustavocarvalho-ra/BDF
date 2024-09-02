@@ -14,7 +14,7 @@ export default function Modal({isOpen, onClose}: ModalProps) {
   return (
 
     <Log>
-      <div className="image"/>
+      <div className="image" style={{pointerEvents: "none"}}/>
       
       <Form />
     </Log>
