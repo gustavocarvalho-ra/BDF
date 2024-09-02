@@ -4,37 +4,39 @@
 // }
 
 .container {
+  padding-top: 1.5em;
   width: 40%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  // overflow: hidden;
-}
-
-.wrapper {
-  position: relative;
-  width: 400px;
-  height: 440px;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, .5);
-  border-radius: 20px;
-  backdrop-filter: blur(13px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 10em;
   overflow: hidden;
-  transform: scale(0);
-  transition: transform .5s ease, height .2s ease;
-
-  &.active {
-    height: 520px;
-  }
-
-  &.activePopup {
-    transform: scale(1);
-  }
 }
+
+// .wrapper {
+//   position: relative;
+//   width: 400px;
+//   height: 440px;
+//   background: transparent;
+//   border: 2px solid rgba(255, 255, 255, .5);
+//   border-radius: 20px;
+//   backdrop-filter: blur(13px);
+//   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   overflow: hidden;
+//   transform: scale(0);
+//   transition: transform .5s ease, height .2s ease;
+
+//   &.active {
+//     height: 520px;
+//   }
+
+//   &.activePopup {
+//     transform: scale(1);
+//   }
+// }
 
 .formBox {
   width: 60%;
@@ -45,20 +47,20 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
   backdrop-filter: blur(13px);
 
-  &.login {
-    transition: transform .18s ease;
-    transform: translateX(0);
+  // &.login {
+  //   transition: transform .18s ease;
+  //   transform: translateX(0);
 
-    .active & {
-      transition: none;
-      transform: translateX(-400px);
-    }
-  }
+  //   .active & {
+  //     transition: none;
+  //     transform: translateX(-400px);
+  //   }
+  // }
 
   &.register {
     // position: absolute;
     transition: none;
-    transform: translateX(400px);
+    // transform: translateX(400px);
 
     .active & {
       transition: transform .18s ease;
