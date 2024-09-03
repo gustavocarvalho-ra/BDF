@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Form.module.scss';
 
 import { IoClose } from "react-icons/io5";
@@ -6,6 +6,10 @@ import { MdEmail } from "react-icons/md";
 import { FaLock, FaUser } from "react-icons/fa";
 
 export default function Form() {
+
+  const [form, setForm] = useState (false);
+
+
   useEffect(() => {
     const wrapper = document.querySelector(`.${styles.container}`);
     const loginLink = document.querySelector(`.${styles.loginLink}`);
