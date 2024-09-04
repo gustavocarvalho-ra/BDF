@@ -4,6 +4,7 @@ import styles from './Form.module.scss';
 import { IoClose } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaLock, FaUser } from "react-icons/fa";
+import Link from 'next/link';
 
 export default function Form() {
 
@@ -69,7 +70,7 @@ export default function Form() {
             </div>
             <button type="submit" className={styles.btn}>Entrar</button>
             <div className={styles.loginRegister}>
-              <p>Não possui conta? <a href="#" onClick={() => setForm} className={styles.registerLink}>Registrar</a></p>
+              <p>Não possui conta? <Link href='#' onClick={() => setForm} className={styles.registerLink}>Registrar</Link></p>
             </div>
           </form>
         </div>
