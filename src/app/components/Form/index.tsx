@@ -100,7 +100,7 @@ export default function Form() {
           </div>
           <button type="submit" className={styles.btn}>Registrar</button>
           <div className={styles.loginRegister}>
-            <p>Já possui uma conta? <a href="#" className={styles.loginLink}>Login</a></p>
+            <p>Já possui uma conta? <a href="#" onClick={toggleClass} className={styles.loginLink}>Login</a></p>
           </div>
         </form>
       </div>
