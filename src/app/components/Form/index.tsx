@@ -50,7 +50,7 @@ export default function Form() {
         <IoClose name="close"></IoClose>
       </span> */}
 
-      <div className={form ? styles.activeClass : ''}>
+      <div style={{width: "500", height: "500"}} className={form ? styles.activeClass : ''}>
         <div className={`${styles.formBox} ${styles.login}`}>
           <h2>Login</h2>
           <form action="#">
@@ -70,7 +70,7 @@ export default function Form() {
             </div>
             <button type="submit" className={styles.btn}>Entrar</button>
             <div className={styles.loginRegister}>
-              <p>Não possui conta? <Link href='#' onClick={() => setForm} className={styles.registerLink}>Registrar</Link></p>
+              <p>Não possui conta? <Link href='#' onClick={toggleClass} className={styles.registerLink}>Registrar</Link></p>
             </div>
           </form>
         </div>
