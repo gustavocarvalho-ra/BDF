@@ -7,8 +7,11 @@ import { FaLock, FaUser } from "react-icons/fa";
 
 export default function Form() {
 
-  const [form, setForm] = useState (false);
+  const [form, setForm] = useState(false);
 
+  const toggleClass = () => {
+    setForm(!form);
+  };
 
   useEffect(() => {
     const wrapper = document.querySelector(`.${styles.container}`);
@@ -46,29 +49,32 @@ export default function Form() {
         <IoClose name="close"></IoClose>
       </span> */}
 
-      <div className={`${styles.formBox} ${styles.login}`}>
-        <h2>Login</h2>
-        <form action="#">
-          <div className={styles.inputBox}>
-            <span className={styles.icon}><MdEmail name="mail"></MdEmail></span>
-            <input type="email" required />
-            <label>Email</label>
-          </div>
-          <div className={styles.inputBox}>
-            <span className={styles.icon}><FaLock name="lock-closed"></FaLock></span>
-            <input type="password" required />
-            <label>Senha</label>
-          </div>
-          <div className={styles.rememberForgot}>
-            <label><input type="checkbox" /> Lembrar senha</label>
-            <a href="#">Esqueceu a senha?</a>
-          </div>
-          <button type="submit" className={styles.btn}>Entrar</button>
-          <div className={styles.loginRegister}>
-            <p>Não possui conta? <a href="#" className={styles.registerLink}>Registrar</a></p>
-          </div>
-        </form>
+      <div className={form ? styles.activeClass : ''}>
+        <div className={`${styles.formBox} ${styles.login}`}>
+          <h2>Login</h2>
+          <form action="#">
+            <div className={styles.inputBox}>
+              <span className={styles.icon}><MdEmail name="mail"></MdEmail></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div className={styles.inputBox}>
+              <span className={styles.icon}><FaLock name="lock-closed"></FaLock></span>
+              <input type="password" required />
+              <label>Senha</label>
+            </div>
+            <div className={styles.rememberForgot}>
+              <label><input type="checkbox" /> Lembrar senha</label>
+              <a href="#">Esqueceu a senha?</a>
+            </div>
+            <button type="submit" className={styles.btn}>Entrar</button>
+            <div className={styles.loginRegister}>
+              <p>Não possui conta? <a href="#" onClick={() => setForm} className={styles.registerLink}>Registrar</a></p>
+            </div>
+          </form>
+        </div>
       </div>
+
 
       <div className={`${styles.formBox} ${styles.register}`}>
         <h2>Registre-se</h2>
