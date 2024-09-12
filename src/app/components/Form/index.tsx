@@ -16,7 +16,7 @@ export default function Form() {
   return (
     <div className={styles.container}>
       <div style={{width: "500", height: "500"}} className={form ? styles.activeClass : ''}>
-        <div className={`${styles.formBox} ${styles.login}`}>
+        <div className={`${styles.formBoxLogin} ${styles.login}`}>
           <h2>Login</h2>
           <form action="#">
             <div className={styles.inputBox}>
@@ -41,7 +41,7 @@ export default function Form() {
         </div>
       </div>
 
-      <div className={`${styles.formBox} ${styles.register}`}>
+      <div className={`${styles.formBoxRegister} ${styles.register}`}>
         <h2>Registre-se</h2>
         <form action="#">
           <div className={styles.inputBox}>
