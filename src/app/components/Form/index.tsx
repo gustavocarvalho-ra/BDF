@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './Form.module.scss';
 
-import { IoClose } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaLock, FaUser } from "react-icons/fa";
 import Link from 'next/link';
@@ -14,42 +13,8 @@ export default function Form() {
     setForm(!form);
   };
 
-  useEffect(() => {
-    const wrapper = document.querySelector(`.${styles.container}`);
-    const loginLink = document.querySelector(`.${styles.loginLink}`);
-    const registerLink = document.querySelector(`.${styles.registerLink}`);
-    const iconClose = document.querySelector(`.${styles.iconClose}`);
-  
-    const handleRegisterLinkClick = () => {
-      wrapper?.classList.add(styles.active);
-    };
-  
-    const handleLoginLinkClick = () => {
-      wrapper?.classList.remove(styles.active);
-    };
-  
-    const handleIconCloseClick = () => {
-      wrapper?.classList.remove(styles.activePopup);
-    };
-  
-    registerLink?.addEventListener('click', handleRegisterLinkClick);
-    loginLink?.addEventListener('click', handleLoginLinkClick);
-    iconClose?.addEventListener('click', handleIconCloseClick);
-  
-    return () => {
-      registerLink?.removeEventListener('click', handleRegisterLinkClick);
-      loginLink?.removeEventListener('click', handleLoginLinkClick);
-      iconClose?.removeEventListener('click', handleIconCloseClick);
-    };
-  }, []);
-
   return (
-    // <div className={styles.wrapper}>
     <div className={styles.container}>
-      {/* <span className={styles.iconClose}>
-        <IoClose name="close"></IoClose>
-      </span> */}
-
       <div style={{width: "500", height: "500"}} className={form ? styles.activeClass : ''}>
         <div className={`${styles.formBox} ${styles.login}`}>
           <h2>Login</h2>
@@ -75,7 +40,6 @@ export default function Form() {
           </form>
         </div>
       </div>
-
 
       <div className={`${styles.formBox} ${styles.register}`}>
         <h2>Registre-se</h2>
