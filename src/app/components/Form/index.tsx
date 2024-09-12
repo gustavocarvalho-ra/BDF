@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './Form.module.scss';
 
+import { IoClose } from "react-icons/io5"
 import { MdEmail } from "react-icons/md";
 import { FaLock, FaUser } from "react-icons/fa";
 import Link from 'next/link';
@@ -15,6 +16,9 @@ export default function Form() {
 
   return (
     <div className={styles.container}>
+      <span className={styles.iconClose}>
+        <IoClose name="close"></IoClose>
+      </span>
       <div style={{width: "500", height: "500"}} className={form ? styles.activeClass : ''}>
         <div className={`${styles.formBoxLogin} ${styles.login}`}>
           <h2>Login</h2>
