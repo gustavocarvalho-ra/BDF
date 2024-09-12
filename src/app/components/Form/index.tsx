@@ -25,7 +25,7 @@ export default function Form() {
           <form action="#">
             <div className={styles.inputBox}>
               <span className={styles.icon}><MdEmail name="mail"></MdEmail></span>
-              <input type="email" required />
+              <input type="e-mail" required />
               <label>Email</label>
             </div>
             <div className={styles.inputBox}>
@@ -55,7 +55,7 @@ export default function Form() {
           </div>
           <div className={styles.inputBox}>
             <span className={styles.icon}><MdEmail name="mail"></MdEmail></span>
-            <input type="email" required />
+            <input type="e-mail" required />
             <label>Email</label>
           </div>
           <div className={styles.inputBox}>

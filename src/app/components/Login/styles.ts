@@ -5,7 +5,7 @@ export const Log = styled.div `
   left: 0;
   top: 57px;
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   /* background: green; */
   display: flex;
   align-content: center;
