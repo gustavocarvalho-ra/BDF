@@ -16,9 +16,9 @@ export default function Form() {
 
   return (
     <div className={styles.container}>
-      <span className={styles.iconClose}>
+      {/* <span className={styles.iconClose}>
         <IoClose name="close"></IoClose>
-      </span>
+      </span> */}
       <div style={{width: "500", height: "500"}} className={form ? styles.activeClass : ''}>
         <div className={`${styles.formBoxLogin} ${styles.login}`}>
           <h2>Login</h2>
