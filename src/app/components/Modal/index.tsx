@@ -1,6 +1,5 @@
-import { Cad } from "../Cadastro/styles";
 import Form from "../Form";
-import { Log } from "../Login/styles";
+import { Log } from "./styles";
 
 interface ModalProps {
   isOpen?: boolean;
